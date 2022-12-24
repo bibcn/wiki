@@ -1,0 +1,126 @@
+site_name: Wiki CréaNum
+site_author: Les bibliothèques UdeM
+site_description: Wiki des Espaces de création numérique des bibliothèques UdeM
+site_url: https://bibcn.github.io/wiki
+repo_url: https://github.com/bibcn/wiki
+repo_name: bibcn/wiki
+copyright: Université de Montréal
+
+
+
+theme : 
+  name: material
+  language: fr
+  icon: 
+    logo: material/dock-window
+    repo: fontawesome/brands/github
+  favicon: images/favicon-32x32.png
+  
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - announce.dismiss
+
+  palette: 
+
+    # Palette pour le mode clair
+    - scheme: udem-clair
+      toggle:
+        icon: material/lightbulb
+        name: Passez au mode sombre
+
+    # Palette pour le mode sombre
+    - scheme: udem-sombre
+      toggle:
+        icon: material/lightbulb-outline
+        name: Passez au mode clair
+
+  font:
+    text: Open Sans
+    code: Share Tech Mono
+  
+  custom_dir: overrides
+  
+
+extra_css:
+  - stylesheets/extra.css
+
+
+plugins:
+  - search
+  - glightbox
+# -social:
+#      cards_color:
+#        fill: "#0057ac" 
+#        text: "#FFFFFF"
+  - git-revision-date-localized:
+      enable_creation_date: true
+      
+
+extra:
+  analytics: 
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: Cette page vous a été utile?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Cette page a été utile
+          data: 1
+          note: >-
+            Merci pour votre rétroaction!
+        - icon: material/emoticon-sad-outline
+          name: Cette page pourrait être améliorée
+          data: 0
+          note: >- 
+            Aidez-nous à améliorer cette page en utilisant notre <a href="..." target="_blank" rel="noopener">formulaire de rétroaction</a>.
+  -social:
+    icon: fontawesome/solid/paper-plane
+    link: mailto:creanum@bib.umontreal.ca
+    mail: Courriel
+  generator: false
+
+
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde  
