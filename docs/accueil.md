@@ -5,4 +5,4 @@ hide:
   - feedback
 ---
 
-# Page principale
+# Accueil
