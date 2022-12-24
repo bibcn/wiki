@@ -26,6 +26,6 @@ jobs:
             "mkdocs-rss-plugin>=1.2" \
             "mkdocs-redirects>=1.0" \
             "pillow<10" \
-            "glightbox"
+            "mkdocs-glightbox"
       
       - run: mkdocs gh-deploy --force
