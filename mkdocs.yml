@@ -124,3 +124,29 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde  
+
+
+  # Page tree
+nav:
+  - Home: accueil.md
+  - Communauté: communauté.md
+  - Documentation:
+    - documentation/index.md
+    
+  - Reference:
+    - reference/index.md
+    - Admonitions: reference/admonitions.md
+    - Annotations: reference/annotations.md
+    - Buttons: reference/buttons.md
+    - Code blocks: reference/code-blocks.md
+    - Content tabs: reference/content-tabs.md
+    - Data tables: reference/data-tables.md
+    - Diagrams: reference/diagrams.md
+    - Footnotes: reference/footnotes.md
+    - Formatting: reference/formatting.md
+    - Grids: reference/grids.md
+    - Icons, Emojis: reference/icons-emojis.md
+    - Images: reference/images.md
+    - Lists: reference/lists.md
+    - MathJax: reference/mathjax.md
+    - Tooltips: reference/tooltips.md
